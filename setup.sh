@@ -7,11 +7,13 @@ DOT_CONFIG_DIRECTORY=".config"
 
 echo "link home directory dotfiles"
 cd ${DOT_DIRECTORY}
+mkdir -p ${HOME}/.backup
 for f in .??*
 do
     #無視したいファイルやディレクトリ
     [ "$f" = ".git" ] && continue
     [ "$f" = ".config" ] && continue
+    cp ${HOME}/${f} ${HOME}/.backup/
     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
 
