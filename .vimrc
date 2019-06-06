@@ -139,3 +139,5 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+" 隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1

@@ -36,7 +36,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -50,7 +50,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\W\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi
@@ -102,3 +102,8 @@ export https_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export ftp_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export HTTP_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
 export HTTPS_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
+
+
+if type -P dircolors >/dev/null ; then
+  eval `dircolors $HOME/.dir_colors`
+fi
