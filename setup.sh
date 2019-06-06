@@ -15,6 +15,7 @@ do
     [ "$f" = ".config" ] && continue
     cp ${HOME}/${f} ${HOME}/.backup/
     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
+    source ${HOME}/${f}
 done
 
 echo "link .config directory dotfiles"
