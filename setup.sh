@@ -1,5 +1,8 @@
+#https://qiita.com/w-tdon/items/24348728c9256e5bf945
+
 set -u
-DOT_DIRECTORY="${HOME}/dotfiles"
+#DOT_DIRECTORY="${HOME}/dotfiles"
+DOT_DIRECTORY=$(cd $(dirname $0); pwd)
 DOT_CONFIG_DIRECTORY=".config"
 
 echo "link home directory dotfiles"

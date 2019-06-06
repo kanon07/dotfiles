@@ -1,7 +1,6 @@
 "https://qiita.com/ahiruman5/items/4f3c845500c172a02935"
 "https://thinca.hatenablog.com/entry/20090530/1243615055"
 
-set guicursor=a:blinkon0
 set nobackup
 set noswapfile
 set autoread
@@ -18,6 +17,10 @@ set smartcase
 set wildmode=list:longest
 set wildmenu
 set history=5000
+
+
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
 
 nnoremap j gj
 nnoremap k gk
@@ -67,6 +70,8 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'scrooloose/nerdtree'
+
 
 if has('lua') " lua機能が有効になっている場合・・・・・・①
     " コードの自動補完
