@@ -85,6 +85,7 @@ alias l='ls -CF'
 alias ..='cd ..'
 alias cp='cp -r'
 alias mkdir='mkdir -p'
+alias rm='rm -r'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
