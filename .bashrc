@@ -82,6 +82,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias ..='cd ..'
+alias cp='cp -r'
+alias mkdir'mkdir -p'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -107,3 +111,5 @@ export HTTPS_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
 if type -P dircolors >/dev/null ; then
   eval `dircolors $HOME/.dir_colors`
 fi
+
+
