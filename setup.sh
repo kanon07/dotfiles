@@ -17,5 +17,4 @@ do
     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
 
-
 echo "linked dotfiles complete!"

@@ -13,8 +13,8 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -83,9 +83,12 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias ..='cd ..'
-alias cp='cp -r'
+alias ...='cd ../../'
+alias cp='cp -ir'
+alias rm='rm -ir'
+alias mv='mv -i'
 alias mkdir='mkdir -p'
-alias rm='rm -r'
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
