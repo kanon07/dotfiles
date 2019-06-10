@@ -1,4 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
+
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -84,9 +85,9 @@ alias l='ls -CF'
 
 alias ..='cd ..'
 alias ...='cd ../../'
-alias cp='cp -ir'
-alias rm='rm -ir'
-alias mv='mv -i'
+alias cp='cp -irv'
+alias rm='rm -irv'
+alias mv='mv -iv'
 alias mkdir='mkdir -p'
 
 
