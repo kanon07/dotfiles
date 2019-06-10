@@ -1,6 +1,5 @@
-Name
-====
 dotfiles repository
+====
 
 Overview  
 .vimrc .bashrc .tmux.conf .dir_corors etc
