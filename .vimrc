@@ -69,7 +69,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'scrooloose/nerdtree'
-
+NeoBundle 'NigoroJr/rsense'
 
 if has('lua') " lua機能が有効になっている場合・・・・・・①
     " コードの自動補完
@@ -80,10 +80,20 @@ if has('lua') " lua機能が有効になっている場合・・・・・・①
     NeoBundle 'Shougo/neosnippet-snippets'
 endif
 
+" コード補完
+NeoBundle 'marcus/rsense'
+
 
 
 "----------------------------------------------------------
 call neobundle#end()
+
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
+
+let g:rsenseUseOmniFunc = 1
 
 
 if neobundle#is_installed('molokai') " molokaiがインストールされていれば
@@ -133,9 +143,14 @@ augroup vimrc-auto-cursorline
   autocmd CursorHold,CursorHoldI * setlocal cursorline
 augroup END
 
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 " 隠しファイルをデフォルトで表示させる
 let NERDTreeShowHidden = 1
+
+" -------------------------------
+" Rsense
+" -------------------------------
+let g:rsenseHome = '/usr/local/lib/rsense-0.3'
+let g:rsenseUseOmniFunc = 1
+
+
