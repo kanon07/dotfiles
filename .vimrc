@@ -153,3 +153,5 @@ let NERDTreeShowHidden = 1
 let g:rsenseHome = '/usr/local/lib/rsense-0.3'
 let g:rsenseUseOmniFunc = 1
 
+"ctagsファイル検索
+set tags=tags;
