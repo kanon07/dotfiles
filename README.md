@@ -6,14 +6,15 @@ Overview
 
 ## Usage
 
-*in proxy  
-git config --global http.proxy URL:PORT  
-git config --global https.proxy URL:PORT  
+proxy
+$ git config --global http.proxy http://cache.ccs.kogakuin.ac.jp:8080
+$ git config --global https.proxy http://cache.ccs.kogakuin.ac.jp:8080
 
-git clone http://github.com/kanon07/dotfiles.git
+$ git clone http://github.com/kanon07/dotfiles.git
 
 ## Install
-sh setup.sh
+$ cd dotfiles
+$ sh setup.sh
 
 ## Author
 
