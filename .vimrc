@@ -155,3 +155,6 @@ let g:rsenseUseOmniFunc = 1
 
 "ctagsファイル検索
 set tags=tags;
+"強調文字表示
+set conceallevel=0
+
