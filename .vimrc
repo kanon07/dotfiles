@@ -17,6 +17,7 @@ set smartcase
 set wildmode=list:longest
 set wildmenu
 set history=5000
+set number
 
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>

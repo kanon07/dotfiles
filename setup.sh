@@ -17,4 +17,5 @@ do
     ln -snfv ${DOT_DIRECTORY}/${f} ${HOME}/${f}
 done
 
+. ${HOME}/.bashrc
 echo "linked dotfiles complete!"
