@@ -106,15 +106,25 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+if type -P dircolors >/dev/null ; then
+  eval `dircolors $HOME/.dir_colors`
+fi
+
+#bashキーバインド
+    #次の単語へ移動
+bind '"\C-f": forward-word'
+    #前の単語へ移動
+bind '"\C-b": backward-word'
+    #直前のディレクトリまで削除
+bind '"\C-h": unix-filename-rubout'
+    #ヤンクをPに
+bind '"\C-p": yank'
+
 export http_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export https_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export ftp_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export HTTP_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
 export HTTPS_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
-
-
-if type -P dircolors >/dev/null ; then
-  eval `dircolors $HOME/.dir_colors`
-fi
 
 
