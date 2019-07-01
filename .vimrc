@@ -18,7 +18,7 @@ set wildmode=list:longest
 set wildmenu
 set history=5000
 set number
-
+set clipboard=unnamedplus
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
@@ -71,6 +71,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'NigoroJr/rsense'
+NeoBundle 'cohama/lexima.vim'
 
 if has('lua') " lua機能が有効になっている場合・・・・・・①
     " コードの自動補完

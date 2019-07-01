@@ -120,6 +120,8 @@ bind '"\C-b": backward-word'
 bind '"\C-h": unix-filename-rubout'
     #ヤンクをPに
 bind '"\C-p": yank'
+    #直後の単語を削除
+bind '"\C-k": kill-word'
 
 export http_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export https_proxy=http://cache.ccs.kogakuin.ac.jp:8080
