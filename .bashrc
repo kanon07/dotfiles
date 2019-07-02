@@ -112,6 +112,8 @@ if type -P dircolors >/dev/null ; then
 fi
 
 #bashキーバインド
+    #C-s off
+stty stop undef
     #次の単語へ移動
 bind '"\C-f": forward-word'
     #前の単語へ移動
@@ -122,6 +124,8 @@ bind '"\C-h": unix-filename-rubout'
 bind '"\C-p": yank'
     #直後の単語を削除
 bind '"\C-k": kill-word'
+    #インクリメンタルサーチ(C-r)
+bind '"\C-s": forward-search-history'
 
 export http_proxy=http://cache.ccs.kogakuin.ac.jp:8080
 export https_proxy=http://cache.ccs.kogakuin.ac.jp:8080
