@@ -19,7 +19,6 @@ set wildmenu
 set history=5000
 set number
 set clipboard=unnamedplus
-highlight MatchParen cterm=NONE ctermfg=white ctermbg=black
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
@@ -162,3 +161,4 @@ let g:rsenseUseOmniFunc = 1
 
 "ctagsファイル検索
 set tags=tags;
+highlight MatchParen cterm=NONE ctermfg=white ctermbg=black
