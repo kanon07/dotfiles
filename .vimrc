@@ -19,8 +19,12 @@ set wildmenu
 set history=5000
 set number
 set clipboard=unnamedplus
+highlight MatchParen cterm=NONE ctermfg=white ctermbg=black
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
+"latex compile
+nnoremap <silent><C-r> :!latexmk<CR>
 
 
 nnoremap j gj
@@ -72,6 +76,7 @@ NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'NigoroJr/rsense'
 NeoBundle 'cohama/lexima.vim'
+
 
 if has('lua') " lua機能が有効になっている場合・・・・・・①
     " コードの自動補完
@@ -157,4 +162,3 @@ let g:rsenseUseOmniFunc = 1
 
 "ctagsファイル検索
 set tags=tags;
-
