@@ -72,6 +72,8 @@ NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'NigoroJr/rsense'
 NeoBundle 'cohama/lexima.vim'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'lervag/vimtex'
 
 if has('lua') " lua機能が有効になっている場合・・・・・・①
     " コードの自動補完
@@ -84,8 +86,6 @@ endif
 
 " コード補完
 NeoBundle 'marcus/rsense'
-
-
 
 "----------------------------------------------------------
 call neobundle#end()
@@ -157,4 +157,3 @@ let g:rsenseUseOmniFunc = 1
 
 "ctagsファイル検索
 set tags=tags;
-
