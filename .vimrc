@@ -22,6 +22,9 @@ set clipboard=unnamedplus
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
+"latex compile
+nnoremap <silent><C-r> :!latexmk<CR>
+
 
 nnoremap j gj
 nnoremap k gk
@@ -74,6 +77,7 @@ NeoBundle 'NigoroJr/rsense'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'lervag/vimtex'
+
 
 if has('lua') " lua機能が有効になっている場合・・・・・・①
     " コードの自動補完
@@ -157,3 +161,7 @@ let g:rsenseUseOmniFunc = 1
 
 "ctagsファイル検索
 set tags=tags;
+<<<<<<< HEAD
+=======
+highlight MatchParen cterm=NONE ctermfg=white ctermbg=black
+>>>>>>> refs/remotes/origin/master
