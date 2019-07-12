@@ -127,3 +127,8 @@ bind '"\C-k": kill-word'
     #インクリメンタルサーチ(C-r)
 bind '"\C-s": forward-search-history'
 
+export http_proxy=http://cache.ccs.kogakuin.ac.jp:8080
+export https_proxy=http://cache.ccs.kogakuin.ac.jp:8080
+export ftp_proxy=http://cache.ccs.kogakuin.ac.jp:8080
+export HTTP_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
+export HTTPS_PROXY=http://cache.ccs.kogakuin.ac.jp:8080
