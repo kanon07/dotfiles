@@ -102,16 +102,17 @@ if type -P dircolors >/dev/null ; then
 fi
 
 #bashキーバインド
+#https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html
     #次の単語へ移動
 bind '"\C-f": forward-word'
     #前の単語へ移動
 bind '"\C-b": backward-word'
-    #直前のディレクトリまで削除
+    #直前の単語を削除(バックスラッシュ区切り)
 bind '"\C-h": unix-filename-rubout'
     #ヤンクをPに
 bind '"\C-p": yank'
-    #直後の単語を削除
-bind '"\C-k": kill-word'
+    #直後の単語を削除(空白区切り)
+bind '"\C-k": shell-kill-word'
     #インクリメンタルサーチ(C-r)
 bind '"\C-s": forward-search-history'
     #ヒストリー

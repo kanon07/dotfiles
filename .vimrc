@@ -25,6 +25,7 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 "latex compile
 nnoremap <silent><C-s> :!latexmk<CR>
 
+inoremap <C-n> _
 
 nnoremap j gj
 nnoremap k gk
