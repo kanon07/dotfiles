@@ -20,20 +20,23 @@ set history=5000
 set number
 set clipboard=unnamedplus
 
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
-nnoremap <silent><C-x> :q!<CR>
-nnoremap <silent><C-w> :wq<CR>
+"comand
+nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-g> :
+nnoremap <C-q> :q!<CR>
+nnoremap <C-w> :wq<CR>
 
 "latex compile
-nnoremap <silent><C-s> :!latexmk<CR>
+nnoremap <C-s> :!latexmk<CR>
 
-inoremap <C-n> _
-
+"move on nomal mode
 nnoremap j gj
 nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
 
+"move on insert mode
+inoremap <C-n> _
 inoremap <C-j> <down>
 inoremap <C-k> <up>
 inoremap <C-h> <left>

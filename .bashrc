@@ -105,6 +105,7 @@ fi
 #https://linuxjm.osdn.jp/html/GNU_bash/man1/bash.1.html
 stty stop undef
 stty kill undef
+stty -ixon
     #次の単語へ移動
 bind '"\C-f": forward-word'
     #前の単語へ移動
