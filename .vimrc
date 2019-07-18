@@ -24,10 +24,13 @@ set clipboard=unnamedplus
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-g> :
 nnoremap <C-q> :q!<CR>
-nnoremap <C-w> :wq<CR>
+inoremap <C-q> <ESC>:q!<CR>
+nnoremap <C-s> :w<CR>
+nnoremap <C-w> :wq!<CR>
+inoremap <C-w> <ESC>:wq!<CR>
 
 "latex compile
-nnoremap <C-s> :!latexmk<CR>
+"nnoremap <C-s> :!latexmk<CR>
 
 "move on nomal mode
 nnoremap j gj
