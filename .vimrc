@@ -21,6 +21,8 @@ set number
 set clipboard=unnamedplus
 
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><C-x> :q!<CR>
+nnoremap <silent><C-w> :wq<CR>
 
 "latex compile
 nnoremap <silent><C-s> :!latexmk<CR>
@@ -31,6 +33,11 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <down> gj
 nnoremap <up> gk
+
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+inoremap <C-h> <left>
+inoremap <C-l> <right>
 
 augroup vimrcEx
   au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
