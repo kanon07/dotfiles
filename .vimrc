@@ -24,9 +24,9 @@ set clipboard=unnamedplus
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-g> :
 nnoremap <C-q> :q!<CR>
-inoremap <C-q> <ESC>:q!<CR>
 nnoremap <C-s> :w<CR>
 nnoremap <C-w> :wq!<CR>
+inoremap <C-q> <ESC>:q!<CR>
 inoremap <C-w> <ESC>:wq!<CR>
 
 "latex compile
@@ -87,7 +87,6 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'NigoroJr/rsense'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'thinca/vim-quickrun'
 
@@ -101,19 +100,9 @@ if has('lua') " lua機能が有効になっている場合・・・・・・①
     NeoBundle 'Shougo/neosnippet-snippets'
 endif
 
-" コード補完
-NeoBundle 'marcus/rsense'
 
 "----------------------------------------------------------
 call neobundle#end()
-
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-endif
-let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
-
-let g:rsenseUseOmniFunc = 1
-
 
 if neobundle#is_installed('molokai') " molokaiがインストールされていれば
     colorscheme molokai " カラースキームにmolokaiを設定する
@@ -165,12 +154,6 @@ augroup END
 
 " 隠しファイルをデフォルトで表示させる
 let NERDTreeShowHidden = 1
-
-" -------------------------------
-" Rsense
-" -------------------------------
-let g:rsenseHome = '/usr/local/lib/rsense-0.3'
-let g:rsenseUseOmniFunc = 1
 
 "ctagsファイル検索
 set tags=tags;
