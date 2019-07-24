@@ -17,6 +17,13 @@ Dotfiles repository
     cd dotfiles
     ./setup.sh
 
+#### without proxy or appear bug in insert mode
+git checkout noproxy
+or
+git checkout nolexima
+
+./setup.sh
+
 ## Author
 
 [kanon07](https://github.com/kanon07)
