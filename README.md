@@ -18,11 +18,11 @@ Dotfiles repository
     ./setup.sh
 
 #### without proxy or appear bug in insert mode
-git checkout noproxy
-or
-git checkout nolexima
+    git checkout noproxy
+    or
+    git checkout nolexima
 
-./setup.sh
+    ./setup.sh
 
 ## Author
 
