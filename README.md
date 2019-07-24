@@ -17,7 +17,7 @@ Dotfiles repository
     cd dotfiles
     ./setup.sh
 
-#### without proxy or appear bug in insert mode
+#### without proxy or appear bug in vim-insert-mode
     git checkout noproxy
     or
     git checkout nolexima
