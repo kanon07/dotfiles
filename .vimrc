@@ -22,6 +22,7 @@ set clipboard=unnamedplus
 
 "comand
 nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-a> ggVG
 nnoremap <C-g> :
 nnoremap <C-q> :q!<CR>
 nnoremap <C-s> :w<CR>
