@@ -163,6 +163,6 @@ set tags=tags;
 highlight MatchParen cterm=NONE ctermfg=white ctermbg=black
 
 if has('persistent_undo')
-  set undodir=~/.vim/undo
+  set undodir=~/.vim/.undo
   set undofile
 endif
