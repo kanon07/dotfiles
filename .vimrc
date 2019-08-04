@@ -26,6 +26,7 @@ nnoremap <C-a> ggVG
 nnoremap <C-g> :
 nnoremap <C-q> :q!<CR>
 nnoremap <C-s> :w<CR>
+inoremap <C-s> :<ESC>w<CR>
 nnoremap <C-w> :wq!<CR>
 inoremap <C-q> <ESC>:q!<CR>
 inoremap <C-w> <ESC>:wq!<CR>
@@ -160,3 +161,8 @@ let NERDTreeShowHidden = 1
 set tags=tags;
 
 highlight MatchParen cterm=NONE ctermfg=white ctermbg=black
+
+if has('persistent_undo')
+  set undodir=~/.vim/undo
+  set undofile
+endif
