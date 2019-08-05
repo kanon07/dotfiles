@@ -89,7 +89,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'cohama/lexima.vim'
+NeoBundle 'cohama/lexima.vim', {'rev': 'aef88ca'}
 NeoBundle 'thinca/vim-quickrun'
 
 
