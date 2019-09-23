@@ -19,6 +19,7 @@ set wildmenu
 set history=5000
 set number
 set clipboard=unnamedplus
+set backspace=indent,eol,start
 
 "comand
 nnoremap <C-e> :NERDTreeToggle<CR>
