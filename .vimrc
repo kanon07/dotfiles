@@ -25,11 +25,11 @@ set backspace=indent,eol,start
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-a> ggVG
 nnoremap <C-g> :
-nnoremap <C-q> :q!<CR>
+"nnoremap <C-q> :q!<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> :<ESC>w<CR>
-nnoremap <C-w> :wq!<CR>
-inoremap <C-q> <ESC>:q!<CR>
+"nnoremap <C-w> :wq!<CR>
+"inoremap <C-q> <ESC>:q!<CR>
 inoremap <C-w> <ESC>:wq!<CR>
 
 "latex compile
