@@ -19,8 +19,6 @@ Dotfiles repository
 
 #### without proxy or appear bug in vim-insert-mode
     git checkout noproxy
-    or
-    git checkout nolexima
 
     ./setup.sh
 
