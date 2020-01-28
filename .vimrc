@@ -1,6 +1,7 @@
 "https://qiita.com/ahiruman5/items/4f3c845500c172a02935"
 "https://thinca.hatenablog.com/entry/20090530/1243615055"
 
+set cursorline
 set nobackup
 set noswapfile
 set autoread
@@ -149,12 +150,6 @@ NeoBundleCheck
 
 if has('lua')
 endif
-
-augroup vimrc-auto-cursorline
-  autocmd!
-  autocmd CursorMoved,CursorMovedI,WinLeave * setlocal nocursorline
-  autocmd CursorHold,CursorHoldI * setlocal cursorline
-augroup END
 
 
 " 隠しファイルをデフォルトで表示させる
