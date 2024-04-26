@@ -7,8 +7,8 @@ Dotfiles repository
 ## Usage
 
 #### proxy
-    git config --global http.proxy http://cache.ccs.kogakuin.ac.jp:8080
-    git config --global https.proxy http://cache.ccs.kogakuin.ac.jp:8080
+    git config --global http.proxy http://xxx:xxx
+    git config --global https.proxy http://xxx:xxx
 
 #### clone
     git clone http://github.com/kanon07/dotfiles.git
